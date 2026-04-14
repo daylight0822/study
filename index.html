@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Study</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- API Key Modal -->
+  <div id="apiModal" class="modal-overlay">
+    <div class="modal-box">
+      <h2>API 키 설정</h2>
+      <p>Gemini API 키를 입력하세요.<br/>브라우저에만 저장되며 외부로 전송되지 않아요.</p>
+      <input type="password" id="apiKeyInput" placeholder="AIza..." />
+      <button id="saveApiKey">저장하고 시작하기</button>
+    </div>
+  </div>
+
+  <!-- Main App -->
+  <div id="app" class="hidden">
+    <header>
+      <h1>Language Study</h1>
+      <button id="changeApiKey" class="btn-ghost">API 키 변경</button>
+    </header>
+
+    <main>
+      <!-- Language Tab -->
+      <div class="tab-group">
+        <button class="tab active" data-lang="en">영어</button>
+        <button class="tab" data-lang="zh">중국어</button>
+      </div>
+
+      <!-- Topic Card -->
+      <div class="card topic-card">
+        <div class="topic-meta">
+          <span class="badge" id="topicLevel">기초</span>
+          <span class="topic-num" id="topicNum">1 / 15</span>
+        </div>
+        <div class="topic-title" id="topicTitle">자기소개</div>
+        <div class="topic-desc" id="topicDesc">이름, 직업, 취미 등 기본적인 자기소개를 연습해보세요.</div>
+        <div class="topic-btns">
+          <button id="prevTopic" class="btn-ghost">이전</button>
+          <button id="nextTopic" class="btn-ghost">다음</button>
+          <button id="startChat" class="btn-primary">시작하기</button>
+        </div>
+      </div>
+
+      <!-- Mode Toggle -->
+      <div class="tab-group">
+        <button class="mode-tab active" data-mode="chat">대화 연습</button>
+        <button class="mode-tab" data-mode="correct">문장 교정</button>
+      </div>
+
+      <!-- Chat Box -->
+      <div class="card chat-card">
+        <div id="chatMessages" class="chat-messages">
+          <div class="msg ai">
+            <span>안녕하세요! 위에서 주제를 선택하고 시작하기를 눌러주세요.</span>
+          </div>
+        </div>
+        <div class="chat-input-row">
+          <input type="text" id="userInput" placeholder="메시지를 입력하세요..." autocomplete="off" />
+          <button id="sendBtn">전송</button>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-num" id="todayCount">0</div>
+          <div class="stat-label">오늘 대화</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num" id="streakCount">0</div>
+          <div class="stat-label">연속 학습일</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
