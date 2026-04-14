@@ -8,78 +8,72 @@
 </head>
 <body>
 
-  <!-- API Key Modal -->
-  <div id="apiModal" class="modal-overlay">
-    <div class="modal-box">
-      <h2>API 키 설정</h2>
-      <p>Gemini API 키를 입력하세요.<br/>브라우저에만 저장되며 외부로 전송되지 않아요.</p>
-      <input type="password" id="apiKeyInput" placeholder="AIza..." />
-      <button id="saveApiKey">저장하고 시작하기</button>
+  <!-- Header -->
+  <header>
+    <h1>Language Study</h1>
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="both">영어 + 중국어</button>
+      <button class="lang-btn" data-lang="en">영어만</button>
+      <button class="lang-btn" data-lang="zh">중국어만</button>
     </div>
-  </div>
+  </header>
 
-  <!-- Main App -->
-  <div id="app" class="hidden">
-    <header>
-      <h1>Language Study</h1>
-      <button id="changeApiKey" class="btn-ghost">API 키 변경</button>
-    </header>
+  <main>
+    <!-- Home: 주제 목록 -->
+    <div id="homeView">
+      <div class="level-filter">
+        <button class="filter-btn active" data-level="all">전체</button>
+        <button class="filter-btn" data-level="기초">기초</button>
+        <button class="filter-btn" data-level="중급">중급</button>
+        <button class="filter-btn" data-level="비즈니스">비즈니스</button>
+      </div>
+      <div class="topic-grid" id="topicGrid"></div>
+    </div>
 
-    <main>
-      <!-- Language Tab -->
-      <div class="tab-group">
-        <button class="tab active" data-lang="en">영어</button>
-        <button class="tab" data-lang="zh">중국어</button>
+    <!-- Study View -->
+    <div id="studyView" class="hidden">
+      <div class="study-header">
+        <button id="backBtn" class="btn-ghost">← 목록</button>
+        <div class="study-title-wrap">
+          <h2 id="studyTitle"></h2>
+          <span class="badge" id="studyLevel"></span>
+        </div>
+        <button id="pdfBtn" class="btn-primary">PDF 저장</button>
       </div>
 
-      <!-- Topic Card -->
-      <div class="card topic-card">
-        <div class="topic-meta">
-          <span class="badge" id="topicLevel">기초</span>
-          <span class="topic-num" id="topicNum">1 / 15</span>
+      <!-- 표현 학습 -->
+      <div class="card">
+        <div class="card-top">
+          <h3>핵심 표현</h3>
+          <div class="hide-btns" id="hideBtns"></div>
         </div>
-        <div class="topic-title" id="topicTitle">자기소개</div>
-        <div class="topic-desc" id="topicDesc">이름, 직업, 취미 등 기본적인 자기소개를 연습해보세요.</div>
-        <div class="topic-btns">
-          <button id="prevTopic" class="btn-ghost">이전</button>
-          <button id="nextTopic" class="btn-ghost">다음</button>
-          <button id="startChat" class="btn-primary">시작하기</button>
-        </div>
-      </div>
-
-      <!-- Mode Toggle -->
-      <div class="tab-group">
-        <button class="mode-tab active" data-mode="chat">대화 연습</button>
-        <button class="mode-tab" data-mode="correct">문장 교정</button>
-      </div>
-
-      <!-- Chat Box -->
-      <div class="card chat-card">
-        <div id="chatMessages" class="chat-messages">
-          <div class="msg ai">
-            <span>안녕하세요! 위에서 주제를 선택하고 시작하기를 눌러주세요.</span>
-          </div>
-        </div>
-        <div class="chat-input-row">
-          <input type="text" id="userInput" placeholder="메시지를 입력하세요..." autocomplete="off" />
-          <button id="sendBtn">전송</button>
+        <div class="table-wrap">
+          <table id="phraseTable">
+            <thead>
+              <tr>
+                <th>한국어</th>
+                <th class="col-en hidden-col">영어</th>
+                <th class="col-zh hidden-col">중국어</th>
+                <th class="col-py hidden-col">발음 (Pinyin)</th>
+              </tr>
+            </thead>
+            <tbody id="phraseBody"></tbody>
+          </table>
         </div>
       </div>
 
-      <!-- Stats -->
-      <div class="stats-row">
-        <div class="stat-box">
-          <div class="stat-num" id="todayCount">0</div>
-          <div class="stat-label">오늘 대화</div>
+      <!-- 퀴즈 미리보기 -->
+      <div class="card">
+        <div class="card-top">
+          <h3>퀴즈 미리보기</h3>
+          <span class="hint">PDF에서 직접 써보세요</span>
         </div>
-        <div class="stat-box">
-          <div class="stat-num" id="streakCount">0</div>
-          <div class="stat-label">연속 학습일</div>
-        </div>
+        <div id="quizPreview"></div>
       </div>
-    </main>
-  </div>
+    </div>
+  </main>
 
+  <script src="data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
