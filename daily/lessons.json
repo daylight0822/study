@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "title": "하루 한 장",
+  "lessons": [
+    {
+      "id": "zh-2026-11-02-v1", "version": 1, "date": "2026-11-02", "language": "zh", "title": "마음에 드는 옷을 발견했다면", "topic": "옷 가게에서", "description": "사고 싶은 옷을 고르고, 가격을 묻고, 입어 보는 다섯 문장.", "status": "학습 준비", "sentences": [
+        {"id":"zh-shop-01","text":"我想买一件衣服。","pronunciation":"Wǒ xiǎng mǎi yí jiàn yīfu.","meaning":"옷 한 벌 사고 싶어요.","grammar":"想 + 동사: ‘~하고 싶다’. 买는 ‘사다’, 件은 옷을 셀 때 쓰는 양사예요. 一는 4성인 件 앞에서 yí로 발음해요.","application":"我想买一件外套。 · 코트 한 벌 사고 싶어요."},
+        {"id":"zh-shop-02","text":"这件多少钱？","pronunciation":"Zhè jiàn duōshao qián?","meaning":"이 옷은 얼마예요?","grammar":"这件은 ‘이 옷/이 물건’. 서로 무엇을 가리키는지 알면 衣服를 생략할 수 있어요. 多少钱으로 가격을 물어요.","application":"那件多少钱？ · 저 옷은 얼마예요?"},
+        {"id":"zh-shop-03","text":"有别的颜色吗？","pronunciation":"Yǒu bié de yánsè ma?","meaning":"다른 색도 있나요?","grammar":"有는 ‘있다’, 别的는 ‘다른’, 颜色은 ‘색’. 문장 끝에 吗를 붙여 있는지 물어요.","application":"有黑色的吗？ · 검은색도 있나요? 的 뒤에는 문맥상 알 수 있는 ‘옷’이 생략됐어요."},
+        {"id":"zh-shop-04","text":"我可以试一下吗？","pronunciation":"Wǒ kěyǐ shì yíxià ma?","meaning":"한번 입어 봐도 될까요?","grammar":"可以 + 동사 + 吗: 허락을 구하는 표현. 试一下는 ‘한번 시험해 보다’. 옷 가게에서는 ‘입어 보다’라는 뜻이에요.","application":"我可以看一下吗？ · 한번 봐도 될까요?"},
+        {"id":"zh-shop-05","text":"我就买这件吧。","pronunciation":"Wǒ jiù mǎi zhè jiàn ba.","meaning":"그럼 이걸로 살게요.","grammar":"就는 여기서 ‘바로 이것으로’ 결정을 강조해요. 吧는 자신의 선택을 부드럽게 말하는 어감을 더해요.","application":"我就买那件吧。 · 그럼 저걸로 살게요."}
+      ]
+    },
+    {
+      "id":"zh-2026-11-01-v1", "version":1, "date":"2026-11-01", "language":"zh", "title":"친구와 보낸 하루", "topic":"일상 이야기", "description":"누구를 만났는지, 무엇을 했는지, 기분은 어땠는지 말해 봐요.", "status":"복습 자료", "sentences":[
+        {"id":"zh-friend-01","text":"我今天跟朋友见面了。","pronunciation":"Wǒ jīntiān gēn péngyou jiànmiàn le.","meaning":"오늘 친구를 만났어요.","grammar":"跟 + 사람은 ‘~와’. 见面了와 见了面 모두 가능한 표현이에요. 了는 언제나 과거 시제를 만드는 표지가 아니에요.","application":"我昨天跟姐姐见面了。 · 어제 언니/누나를 만났어요."},
+        {"id":"zh-friend-02","text":"我们在朋友家见面了。","pronunciation":"Wǒmen zài péngyou jiā jiànmiàn le.","meaning":"우리는 친구 집에서 만났어요.","grammar":"在 + 장소 + 동사: 어디서 하는지 말해요. 朋友家는 朋友的家에서 的가 생략된 자연스러운 표현이에요.","application":"我们在咖啡店见面了。 · 우리는 카페에서 만났어요."},
+        {"id":"zh-friend-03","text":"我们喝了咖啡。","pronunciation":"Wǒmen hē le kāfēi.","meaning":"우리는 커피를 마셨어요.","grammar":"동사 뒤 了는 동작이 이루어졌음을 나타내요. 여기서는 문장 끝에 了를 하나 더 넣을 필요가 없어요. 문장 끝 了는 새로운 상황이나 변화와도 관련돼요.","application":"昨天我喝了茶。 · 어제 차를 마셨어요."},
+        {"id":"zh-friend-04","text":"我很开心。","pronunciation":"Wǒ hěn kāixīn.","meaning":"기분이 좋아요.","grammar":"很 + 형용사로 상태를 말해요. 很이 항상 ‘매우’라는 강한 뜻은 아니에요. 이 문맥에서는 자연스럽게 기분을 서술해요.","application":"我今天很开心。 · 오늘 기분이 좋아요."},
+        {"id":"zh-friend-05","text":"但是我太累了。","pronunciation":"Dànshì wǒ tài lèi le.","meaning":"그렇지만 너무 피곤해요.","grammar":"但是는 ‘하지만’. 太 + 형용사 + 了는 정도가 높다는 감탄이나 평가를 나타내요. 이 了를 과거형으로 해석하지 않아요.","application":"我很开心，但是我太累了。 · 즐거웠지만 너무 피곤해요."}
+      ]
+    },
+    {
+      "id":"en-2026-11-01-v1", "version":1, "date":"2026-11-01", "language":"en", "title":"작은 경험부터 내 말로", "topic":"친구와의 만남", "description":"복습할 두 문장부터. 다음 다섯 문장 수업은 준비 중이에요.", "status":"복습 자료 · 2문장", "sentences":[
+        {"id":"en-friend-01","text":"Today, I met my friend at her house.","pronunciation":"","meaning":"오늘 친구 집에서 친구를 만났어요.","grammar":"meet의 과거형은 met. 장소는 at her house로 연결해요. 하나의 짧은 문장에 언제·누구·어디를 담을 수 있어요.","application":"Yesterday, I met my friend at a café. · 어제 카페에서 친구를 만났어요."},
+        {"id":"en-friend-02","text":"We drank coffee together and talked about our lives.","pronunciation":"","meaning":"우리는 함께 커피를 마시며 서로 사는 이야기를 했어요.","grammar":"drink의 단순 과거형은 drank. drunk는 과거분사예요. talked about + 주제로 무엇을 이야기했는지 말해요. 각자의 삶이라 our lives를 써요.","application":"We had lunch together and talked about our hobbies. · 함께 점심을 먹으며 취미 이야기를 했어요."}
+      ]
+    }
+  ]
+}
